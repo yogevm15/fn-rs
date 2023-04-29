@@ -1,0 +1,13 @@
+cargo-features = ["per-package-target"]
+
+[package]
+name = "launcher"
+version = "0.1.0"
+edition = "2021"
+forced-target = "x86_64-pc-windows-gnu"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.2.5", features = ["derive"] }
+dll-syringe = { git = "https://github.com/OpenByteDev/dll-syringe.git" }
+thiserror = "1.0.40"
